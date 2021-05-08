@@ -21,7 +21,7 @@ namespace SmartCurtain
     /// </summary>
     public partial class MainWindow : Window
     {
-        public SerialPort myPort;
+        protected SerialPort myPort;
 
         protected void PortCreater()
         {
