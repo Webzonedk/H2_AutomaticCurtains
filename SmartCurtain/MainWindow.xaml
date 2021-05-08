@@ -1,0 +1,100 @@
+﻿<Window x:Class="SmartCurtain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartCurtain"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!--#region Grid-->
+    <Grid Background="#121212">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10px" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10px" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10px" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10px" />
+        </Grid.ColumnDefinitions>
+
+        <!--#region Presets-->
+        <TextBlock x:Name="PresetHeading" Grid.Column="1" Grid.Row="1" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="PRESETS" FontSize="36"/>
+
+        <Button  x:Name="ButtonClickPreset0Percent" Grid.Column="1" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickPreset0Percent_Click">
+            <Viewbox>
+                <TextBlock>0%</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Button  x:Name="ButtonClickPreset25Percent" Grid.Column="1" Grid.Row="3" Background="#333" Foreground="#fff" Click="ButtonClickPreset25Percent_Click">
+            <Viewbox>
+                <TextBlock>25%</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Button  x:Name="ButtonClickPreset50Percent" Grid.Column="1" Grid.Row="4" Background="#333" Foreground="#fff" Click="ButtonClickPreset50Percent_Click">
+            <Viewbox>
+                <TextBlock>50%</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Button  x:Name="ButtonClickPreset75Percent" Grid.Column="1" Grid.Row="5" Background="#333" Foreground="#fff" Click="ButtonClickPreset75Percent_Click">
+            <Viewbox>
+                <TextBlock>75%</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Button  x:Name="ButtonClickPreset100Percent" Grid.Column="1" Grid.Row="6" Background="#333" Foreground="#fff" Click="ButtonClickPreset100Percent_Click">
+            <Viewbox>
+                <TextBlock>100%</TextBlock>
+            </Viewbox>
+        </Button>
+        <!--#endregion-->
+
+        <!--#region Automation-->
+        <TextBlock x:Name="AutomationHeading" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="AUTOMATIK" FontSize="36"/>
+
+        <Button  x:Name="ButtonClickTurnAutomationOn" Grid.Column="3" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickTurnAutomationOn_Click">
+            <Viewbox>
+                <TextBlock>ON</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Button  x:Name="ButtonClickTurnAutomationOff" Grid.Column="4" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickTurnAutomationOff_Click">
+            <Viewbox>
+                <TextBlock>OFF</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <!--#endregion-->
+
+        <!--#region Manuel-->
+        <TextBlock x:Name="ManuelHeading" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="MANUEL" FontSize="36"/>
+
+        <Button  x:Name="ButtonClickManuelDown" Grid.Column="3" Grid.Row="6" Background="#333" Foreground="#fff" Click="ButtonClickManuelDown_Click">
+            <Viewbox>
+                <TextBlock>DOWN</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Button  x:Name="ButtonClickManuelUp" Grid.Column="4" Grid.Row="6" Background="#333" Foreground="#fff" Click="ButtonClickManuelUp_Click">
+            <Viewbox>
+                <TextBlock>UP</TextBlock>
+            </Viewbox>
+        </Button>
+        <!--#endregion-->
+    </Grid>
+    <!--#endregion-->
+</Window>

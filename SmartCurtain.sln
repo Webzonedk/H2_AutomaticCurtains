@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCurtain", "SmartCurtain\SmartCurtain.csproj", "{1D1AC029-9769-4CD0-B207-FA2028ADEFFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D1AC029-9769-4CD0-B207-FA2028ADEFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1AC029-9769-4CD0-B207-FA2028ADEFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1AC029-9769-4CD0-B207-FA2028ADEFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1AC029-9769-4CD0-B207-FA2028ADEFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52D68046-C505-4CA6-ABA0-FBB186093A8A}
+	EndGlobalSection
+EndGlobal
