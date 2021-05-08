@@ -23,7 +23,7 @@ namespace SmartCurtain
     {
         public SerialPort myPort;
 
-        protected void portCreater()
+        protected void PortCreater()
         {
             myPort = new SerialPort();
             myPort.BaudRate = 9600;
@@ -37,6 +37,7 @@ namespace SmartCurtain
 
         private void ButtonClickPreset0Percent_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
             myPort.WriteLine("0");
@@ -45,6 +46,7 @@ namespace SmartCurtain
 
         private void ButtonClickPreset25Percent_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
             myPort.WriteLine("25");
@@ -53,6 +55,7 @@ namespace SmartCurtain
 
         private void ButtonClickPreset50Percent_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
             myPort.WriteLine("50");
@@ -61,6 +64,7 @@ namespace SmartCurtain
 
         private void ButtonClickPreset75Percent_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
             myPort.WriteLine("75");
@@ -69,6 +73,7 @@ namespace SmartCurtain
 
         private void ButtonClickPreset100Percent_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
             myPort.WriteLine("100");
@@ -77,6 +82,7 @@ namespace SmartCurtain
 
         private void ButtonClickTurnAutomationOn_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
 
@@ -85,6 +91,7 @@ namespace SmartCurtain
 
         private void ButtonClickTurnAutomationOff_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
 
@@ -93,6 +100,7 @@ namespace SmartCurtain
 
         private void ButtonClickManuelDown_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
 
@@ -101,6 +109,7 @@ namespace SmartCurtain
 
         private void ButtonClickManuelUp_Click(object sender, RoutedEventArgs e)
         {
+            PortCreater();
             myPort.Open();
             //Here we can write to the arduino
 
