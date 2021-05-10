@@ -96,23 +96,37 @@ namespace SmartCurtain
             myPort.Close();
         }
 
-        private void ButtonClickManuelDown_MouseDown(object sender, RoutedEventArgs e)
+        private void ManualUpButton_Click(object sender, RoutedEventArgs e)
         {
             myPort.Open();
-            //Here we can write to the arduino
-            myPort.Write("d");
-
-            myPort.Close();
-        }
-
-        private void ButtonClickManuelUp_MouseDown(object sender, RoutedEventArgs e)
-        {
-            myPort.Open();
-            //Here we can write to the arduino
             myPort.Write("u");
             myPort.Close();
         }
 
-     
+        private void ManualDownButton_Click(object sender, RoutedEventArgs e)
+        {
+            myPort.Open();
+            myPort.Write("d");
+            myPort.Close();
+        }
+
+        //private void ButtonClickManuelDown_MouseDown(object sender, RoutedEventArgs e)
+        //{
+        //    myPort.Open();
+        //    //Here we can write to the arduino
+        //    myPort.Write("d");
+
+        //    myPort.Close();
+        //}
+
+        //private void ButtonClickManuelUp_MouseDown(object sender, RoutedEventArgs e)
+        //{
+        //    myPort.Open();
+        //    //Here we can write to the arduino
+        //    myPort.Write("u");
+        //    myPort.Close();
+        //}
+
+
     }
 }

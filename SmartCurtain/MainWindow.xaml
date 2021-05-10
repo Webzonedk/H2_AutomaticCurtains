@@ -83,17 +83,29 @@
         <!--#region Manuel-->
         <TextBlock x:Name="ManuelHeading" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="MANUEL" FontSize="36"/>
 
-        <Button  x:Name="ButtonClickManuelDown" Grid.Column="3" Grid.Row="6" Background="#333" Foreground="#fff" MouseDown="ButtonClickManuelDown_MouseDown">
-            <Viewbox>
-                <TextBlock>DOWN</TextBlock>
-            </Viewbox>
-        </Button>
-
-        <Button  x:Name="ButtonClickManuelUp" Grid.Column="4" Grid.Row="6" Background="#333" Foreground="#fff" MouseDown="ButtonClickManuelUp_MouseDown">
+        <RepeatButton x:Name="ManualUpButton" Grid.Column="3" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualUpButton_Click">
             <Viewbox>
                 <TextBlock>UP</TextBlock>
             </Viewbox>
-        </Button>
+        </RepeatButton>
+
+        <RepeatButton x:Name="ManualDownButton" Grid.Column="3" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualDownButton_Click">
+            <Viewbox>
+                <TextBlock>DOWN</TextBlock>
+            </Viewbox>
+        </RepeatButton>
+        
+        <!--<button  x:name="buttonclickmanueldown" grid.column="3" grid.row="6" background="#333" foreground="#fff" mousedown="buttonclickmanueldown_mousedown">
+            <viewbox>
+                <textblock>down</textblock>
+            </viewbox>
+        </button>
+
+        <button  x:name="buttonclickmanuelup" grid.column="4" grid.row="6" background="#333" foreground="#fff" mousedown="buttonclickmanuelup_mousedown">
+            <viewbox>
+                <textblock>up</textblock>
+            </viewbox>
+        </button>-->
         <!--#endregion-->
     </Grid>
     <!--#endregion-->
