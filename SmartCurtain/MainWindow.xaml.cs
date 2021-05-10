@@ -27,7 +27,7 @@ namespace SmartCurtain
 
         protected void PortCreater()
         {
-            myPort = new SerialPort("COM5", 9600);
+            myPort = new SerialPort("COM4", 9600);
             //myPort.BaudRate = 9600;
             //myPort.PortName = "COM5";
         }
@@ -96,7 +96,7 @@ namespace SmartCurtain
             myPort.Close();
         }
 
-        private void ButtonClickManuelDown_Click(object sender, RoutedEventArgs e)
+        private void ButtonClickManuelDown_MouseDown(object sender, RoutedEventArgs e)
         {
             myPort.Open();
             //Here we can write to the arduino
@@ -105,12 +105,14 @@ namespace SmartCurtain
             myPort.Close();
         }
 
-        private void ButtonClickManuelUp_Click(object sender, RoutedEventArgs e)
+        private void ButtonClickManuelUp_MouseDown(object sender, RoutedEventArgs e)
         {
             myPort.Open();
             //Here we can write to the arduino
             myPort.Write("u");
             myPort.Close();
         }
+
+     
     }
 }
