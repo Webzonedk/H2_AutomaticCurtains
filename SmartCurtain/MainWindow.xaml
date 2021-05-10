@@ -83,13 +83,13 @@
         <!--#region Manuel-->
         <TextBlock x:Name="ManuelHeading" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="MANUEL" FontSize="36"/>
 
-        <RepeatButton x:Name="ManualUpButton" Grid.Column="3" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualUpButton_Click" Interval="400">
+        <RepeatButton x:Name="ManualUpButton" Grid.Column="3" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualUpButton_Click" Interval="500">
             <Viewbox>
                 <TextBlock>UP</TextBlock>
             </Viewbox>
         </RepeatButton>
 
-        <RepeatButton x:Name="ManualDownButton" Grid.Column="4" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualDownButton_Click" Interval="400">
+        <RepeatButton x:Name="ManualDownButton" Grid.Column="4" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualDownButton_Click" Interval="500">
             <Viewbox>
                 <TextBlock>DOWN</TextBlock>
             </Viewbox>
