@@ -23,40 +23,40 @@
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="10px" />
       <ColumnDefinition Width="1*" />
-      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="75px" />
       <ColumnDefinition Width="1*" />
       <ColumnDefinition Width="1*" />
       <ColumnDefinition Width="10px" />
     </Grid.ColumnDefinitions>
 
     <!--#region Presets-->
-    <TextBlock x:Name="PresetHeading" Grid.Column="4" Grid.Row="1" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="PRESETS" FontSize="36"/>
+    <TextBlock x:Name="PresetHeading" Grid.Column="1" Grid.Row="1" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="PRESETS" FontSize="36"/>
 
-    <Button  x:Name="ButtonClickPreset0Percent" Grid.Column="4" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickPreset0Percent_Click">
+    <Button  x:Name="ButtonClickPreset0Percent" Grid.Column="1" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickPreset0Percent_Click">
       <Viewbox>
         <TextBlock>0%</TextBlock>
       </Viewbox>
     </Button>
 
-    <Button  x:Name="ButtonClickPreset25Percent" Grid.Column="4" Grid.Row="3" Background="#333" Foreground="#fff" Click="ButtonClickPreset25Percent_Click">
+    <Button  x:Name="ButtonClickPreset25Percent" Grid.Column="1" Grid.Row="3" Background="#333" Foreground="#fff" Click="ButtonClickPreset25Percent_Click">
       <Viewbox>
         <TextBlock>25%</TextBlock>
       </Viewbox>
     </Button>
 
-    <Button  x:Name="ButtonClickPreset50Percent" Grid.Column="4" Grid.Row="4" Background="#333" Foreground="#fff" Click="ButtonClickPreset50Percent_Click">
+    <Button  x:Name="ButtonClickPreset50Percent" Grid.Column="1" Grid.Row="4" Background="#333" Foreground="#fff" Click="ButtonClickPreset50Percent_Click">
       <Viewbox>
         <TextBlock>50%</TextBlock>
       </Viewbox>
     </Button>
 
-    <Button  x:Name="ButtonClickPreset75Percent" Grid.Column="4" Grid.Row="5" Background="#333" Foreground="#fff" Click="ButtonClickPreset75Percent_Click">
+    <Button  x:Name="ButtonClickPreset75Percent" Grid.Column="1" Grid.Row="5" Background="#333" Foreground="#fff" Click="ButtonClickPreset75Percent_Click">
       <Viewbox>
         <TextBlock>75%</TextBlock>
       </Viewbox>
     </Button>
 
-    <Button  x:Name="ButtonClickPreset100Percent" Grid.Column="4" Grid.Row="6" Background="#333" Foreground="#fff" Click="ButtonClickPreset100Percent_Click">
+    <Button  x:Name="ButtonClickPreset100Percent" Grid.Column="1" Grid.Row="6" Background="#333" Foreground="#fff" Click="ButtonClickPreset100Percent_Click">
       <Viewbox>
         <TextBlock>100%</TextBlock>
       </Viewbox>
@@ -64,47 +64,47 @@
     <!--#endregion-->
 
     <!--#region Automation-->
-    <TextBlock x:Name="AutomationHeading" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="AUTOMATIK" FontSize="36"/>
+    <TextBlock x:Name="AutomationHeading" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="AUTOMATION" FontSize="36"/>
 
-    <Button  x:Name="ButtonClickTurnAutomationOn" Grid.Column="1" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickTurnAutomationOn_Click">
+    <Button  x:Name="ButtonClickTurnAutomationOn" Grid.Column="3" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickTurnAutomationOn_Click">
       <Viewbox>
         <TextBlock>ON</TextBlock>
       </Viewbox>
     </Button>
 
-    <Button  x:Name="ButtonClickTurnAutomationOff" Grid.Column="2" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickTurnAutomationOff_Click">
+    <Button  x:Name="ButtonClickTurnAutomationOff" Grid.Column="4" Grid.Row="2" Background="#333" Foreground="#fff" Click="ButtonClickTurnAutomationOff_Click">
       <Viewbox>
         <TextBlock>OFF</TextBlock>
       </Viewbox>
     </Button>
     <!--#endregion-->
-
-    <!--#region Reset-->
-    <TextBlock x:Name="Reset" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="RESET" FontSize="36"/>
-
-    <RepeatButton x:Name="ForceUpButton" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"  Background="#333" Foreground="#fff" Click="ForceUpButton_Click" Interval="500">
-      <Viewbox>
-        <TextBlock>UP</TextBlock>
-      </Viewbox>
-    </RepeatButton>
-    <!--#endregion-->
     
     <!--#region Manuel-->
-    <TextBlock x:Name="ManuelHeading" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="MANUEL" FontSize="36"/>
+    <TextBlock x:Name="ManuelHeading" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="MANUAL" FontSize="36"/>
 
-    <RepeatButton x:Name="ManualUpButton" Grid.Column="1" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualUpButton_Click" Interval="500">
+    <RepeatButton x:Name="ManualUpButton" Grid.Column="3" Grid.Row="4" Background="#333" Foreground="#fff" Click="ManualUpButton_Click" Interval="500">
       <Viewbox>
         <TextBlock>UP</TextBlock>
       </Viewbox>
     </RepeatButton>
 
-    <RepeatButton x:Name="ManualDownButton" Grid.Column="2" Grid.Row="6" Background="#333" Foreground="#fff" Click="ManualDownButton_Click" Interval="500">
+    <RepeatButton x:Name="ManualDownButton" Grid.Column="4" Grid.Row="4" Background="#333" Foreground="#fff" Click="ManualDownButton_Click" Interval="500">
       <Viewbox>
         <TextBlock>DOWN</TextBlock>
       </Viewbox>
     </RepeatButton>
     <!--#endregion-->
-    
+
+    <!--#region Reset-->
+    <TextBlock x:Name="Reset" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="RESET" FontSize="36"/>
+
+    <RepeatButton x:Name="ForceUpButton" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="2"  Background="#333" Foreground="#fff" Click="ForceUpButton_Click" Interval="500">
+      <Viewbox>
+        <TextBlock>UP</TextBlock>
+      </Viewbox>
+    </RepeatButton>
+    <!--#endregion-->
+
   </Grid>
   <!--#endregion-->
 </Window>
