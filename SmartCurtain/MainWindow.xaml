@@ -96,11 +96,10 @@
     <!--#endregion-->
 
     <!--#region Reset-->
-    <TextBlock x:Name="Reset" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Center" Background="#333" Foreground="#cf6679" Text="RESET" FontSize="36"/>
 
     <RepeatButton x:Name="ForceUpButton" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="2"  Background="#333" Foreground="#fff" Click="ForceUpButton_Click" Interval="500">
       <Viewbox>
-        <TextBlock>UP</TextBlock>
+                <TextBlock>FORCE UP</TextBlock>
       </Viewbox>
     </RepeatButton>
     <!--#endregion-->
