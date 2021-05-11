@@ -111,6 +111,13 @@ namespace SmartCurtain
            
         }
 
+        private void ForceUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            myPort.Open();
+            myPort.Write("5");
+            myPort.Close();
+        }
+
         //private void ButtonClickManuelDown_MouseDown(object sender, RoutedEventArgs e)
         //{
         //    myPort.Open();
