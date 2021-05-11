@@ -27,7 +27,7 @@ namespace SmartCurtain
 
         protected void PortCreater()
         {
-            myPort = new SerialPort("COM4", 9600);
+            myPort = new SerialPort("COM5", 9600);
             //myPort.BaudRate = 9600;
             //myPort.PortName = "COM5";
         }
@@ -108,6 +108,7 @@ namespace SmartCurtain
             myPort.Open();
             myPort.Write("d");
             myPort.Close();
+           
         }
 
         //private void ButtonClickManuelDown_MouseDown(object sender, RoutedEventArgs e)
